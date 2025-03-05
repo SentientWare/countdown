@@ -425,13 +425,13 @@
 
     <script>
         function updateCountdown() {
-            const targetDate = new Date("March 7, " + new Date().getFullYear() + " 00:00:00").getTime();
+            const targetDate = new Date("March 7, " + new Date().getFullYear() + " 20:00:00").getTime();
             const now = new Date().getTime();
             const difference = targetDate - now;
 
             // If the date has passed, use next year
             const finalTargetDate = difference < 0 
-                ? new Date("March 7, " + (new Date().getFullYear() + 1) + " 00:00:00").getTime()
+                ? new Date("March 7, " + (new Date().getFullYear() + 1) + " 20:00:00").getTime()
                 : targetDate;
             
             const finalDifference = finalTargetDate - now;
